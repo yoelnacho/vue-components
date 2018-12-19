@@ -1,6 +1,6 @@
 <template>
     <div class="hello">
-        logo
+        <p :class="$style.color">logo</p>
     </div>
 </template>
 
@@ -9,3 +9,13 @@ export default {
     name: 'Logo'
 }
 </script>
+
+<style module>
+    .text {
+        font-weight: bold;
+    }
+
+    .color {
+        color: green
+    }
+</style>
