@@ -1,17 +1,26 @@
 {
   "name": "@mobylab/moby",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Web components set",
   "private": false,
+  "author": "Mobydigital <contact@mobydigital.com> (https://www.mobydigital.com/)",
+  "contributors": [
+    "Ignacio Arguello <iarguello@mobydigital.com>"
+  ],
+  "license": "MIT",
+  "repository": "yoelnacho/vue-components",
+  "homepage": "https://mobydigital.com/",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "component": "vue-cli-service build --target wc 'src/components/*.vue'"
+    "component": "vue-cli-service build --target wc --name moby 'src/components/*.vue'"
   },
   "dependencies": {
-    "@vue/web-component-wrapper": "^1.2.0",
-    "vue": "^2.5.17",
-    "vue-custom-element": "^3.2.6"
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",
@@ -23,7 +32,6 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "vue-template-compiler": "^2.5.17"
   },
-  "homepage": "https://github.com/yoelnacho/vue-components",
   "eslintConfig": {
     "root": true,
     "env": {
