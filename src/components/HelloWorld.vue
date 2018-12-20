@@ -1,6 +1,7 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
+        <p :class="$style.a">Testing</p>
     </div>
 </template>
 
@@ -14,7 +15,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style module>
 h3 {
     margin: 40px 0 0;
 }
@@ -26,7 +27,8 @@ li {
     display: inline-block;
     margin: 0 10px;
 }
-a {
-    color: #42b983;
+.a {
+    /* color: #42b983; */
+    composes: color from "../assets/scss/main.scss";
 }
 </style>
