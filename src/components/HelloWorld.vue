@@ -2,6 +2,12 @@
     <div class="hello">
         <h1>{{ msg }}</h1>
         <p :class="$style.a">Testing</p>
+        <p :class="{ [$style.foo]: isRed }">
+            Am I red?
+        </p>
+        <p :class="[$style.foo, $style.bar]">
+            Red and bold
+        </p>
     </div>
 </template>
 
@@ -10,12 +16,21 @@ export default {
     name: 'HelloWorld',
     props: {
         msg: String
+    },
+    data() {
+        return {
+            isRed: {
+                type: String,
+                value: true
+            }
+        }
     }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style module>
+
 h3 {
     margin: 40px 0 0;
 }
@@ -27,8 +42,12 @@ li {
     display: inline-block;
     margin: 0 10px;
 }
-.a {
-    /* color: #42b983; */
-    composes: color from "../assets/scss/main.scss";
+.foo {
+    composes: red from "../assets/scss/main.scss";
+}
+
+.bar {
+    composes: red from "../assets/scss/main.scss";
+    composes: bold from "../assets/scss/main.scss";
 }
 </style>
