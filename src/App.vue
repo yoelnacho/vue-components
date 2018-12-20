@@ -3,7 +3,6 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Web component"/>
     <Logo />
-    <Logo />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div class="hello">
-        <p :class="$style.color">logo</p>
+        <p>logo</p>
     </div>
 </template>
 
@@ -10,12 +10,13 @@ export default {
 }
 </script>
 
-<style module>
-    .text {
-        font-weight: bold;
-    }
+<style scoped>
+/*  LOGO COMPONENT */
+.text {
+    font-weight: bold;
+}
 
-    .color {
-        color: green
-    }
+p {
+    color: green
+}
 </style>
