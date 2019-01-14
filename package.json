@@ -1,6 +1,6 @@
 {
   "name": "@mobylab/moby",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Web components set",
   "private": false,
   "keywords": "vue, vue-components, mobylab",
