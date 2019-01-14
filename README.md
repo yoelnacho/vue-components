@@ -18,4 +18,13 @@ $ yarn component
 #### NPM hub
 [@mobylab/moby](https://www.npmjs.com/package/@mobylab/moby)
 
+
+#### Publish components
 > Version: Set it from package.json
+```
+$ npm login
+
+// complete user data
+
+$ npm publish
+```
