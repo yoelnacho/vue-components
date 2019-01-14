@@ -3,13 +3,14 @@
   "version": "0.1.2",
   "description": "Web components set",
   "private": false,
+  "keywords": "vue, vue-components, mobylab",
   "author": "Mobydigital <contact@mobydigital.com> (https://www.mobydigital.com/)",
   "contributors": [
     "Ignacio Arguello <iarguello@mobydigital.com>"
   ],
   "license": "MIT",
   "repository": "yoelnacho/vue-components",
-  "homepage": "https://mobydigital.com/",
+  "homepage": "https://www.mobydigital.com/",
   "files": [
     "dist/"
   ],
