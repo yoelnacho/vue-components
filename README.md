@@ -1,16 +1,21 @@
 # vue-components
-[Curso gratuito](https://wmedia.teachable.com/)
+The idea
+> https://www.webcomponents.org/
 
-### Compiles and hot-reloads for development
-```
-$ yarn serve
-```
- 
 #### Vue components library (examples)
 [Bravissimo Vue Components](https://vue-components.netlify.com/)
 
+### Development
+```
+$ yarn serve
+```
+
+### Compile Components
+```
+$ yarn component
+```
 
 #### NPM hub
 [@mobylab/moby](https://www.npmjs.com/package/@mobylab/moby)
 
-> Versionar desde package.json
+> Version: Set it from package.json
