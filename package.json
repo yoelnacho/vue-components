@@ -3,8 +3,12 @@
   "version": "0.1.3",
   "description": "Web components set",
   "private": false,
-  "keywords": "vue, vue-components, mobylab",
-  "author": "Mobydigital <contact@mobydigital.com> (https://www.mobydigital.com/)",
+  "keywords": [
+    "vue", 
+    "vue-components", 
+    "mobylab"
+  ],
+  "author": "Mobydigital <iarguello@mobydigital.com> (https://www.mobydigital.com/)",
   "contributors": [
     "Ignacio Arguello <iarguello@mobydigital.com>"
   ],
@@ -18,7 +22,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "component": "vue-cli-service build --target wc --name moby 'src/components/*.vue'"
+    "component": "vue-cli-service build --target wc --name moby 'src/components/*.vue'",
+    "libs": "vue-cli-service build --target lib --name moby 'src/components/Dummy.vue'"
   },
   "dependencies": {
     "vue": "^2.5.17"
