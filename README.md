@@ -2,10 +2,8 @@
 The idea
 > https://www.webcomponents.org/
 
-#### Vue components library (examples)
-[Bravissimo Vue Components](https://vue-components.netlify.com/)
-
-### Development
+###
+### Development mode
 ```
 $ yarn serve
 ```
@@ -15,16 +13,26 @@ $ yarn serve
 $ yarn component
 ```
 
+##
 #### NPM hub
 [@mobylab/moby](https://www.npmjs.com/package/@mobylab/moby)
-
+###
 
 #### Publish components
-> Version: Set it from package.json
+
 ```
+// 0 - Version
+Set the latest version in the package.json
+```
+```
+// 1 - Login
 $ npm login
-
-// complete user data
-
+```
+```
+// 2 - User data
+fill data's user
+```
+```
+// 3 - Publish
 $ npm publish
 ```
