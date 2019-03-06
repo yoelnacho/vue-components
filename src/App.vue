@@ -1,31 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Web component"/>
-    <Logo />
+  <div class="main-page">
+    <p>
+      <input type="checkbox" v-model="isEmphasis.value" name="emphasis"> emphasis
+    </p>
+    <moby-dummy name="Nacho" :strong="isEmphasis.value"></moby-dummy>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Logo from './components/Logo.vue'
+import Dummy from '@/components/Dummy'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
-    Logo
+    'moby-dummy': Dummy
+  },
+  data () {
+    return {
+      isEmphasis: {
+        type: Boolean,
+        default: false
+      }
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
